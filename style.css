@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color:rgba(35,28,26,0.8);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+
+}
+header ul{
+    position: absolute;
+    top: 0;
+    right: 5vw;
+    line-height: 70px;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+h1{
+    color:white; 
+    line-height: 70px;
+    position: absolute;
+    top: 0;
+    left: 40px;
+    background-image: url(/Users/vir-96/Desktop/学习/imag/e751bbebf2ab38c0fd476ffe34aa334b.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 220px;
+    text-indent: -9999px;
+    height: 70px;
+    background-size: 40%;
+    background-position: center 1px;
+
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+.news {
+    background-color: rgb(229, 167, 123,0.5);
+    color: white;
+    height: 95vh;
+    background-image: url(imag/5ffcb3a0ecb27169cfd2f9cd426a1568.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.news h2{
+    font-size: 60px;
+    margin-top:60px;
+}
+.news p{
+    color: #fef7e6;
+    font-size: 18px;
+
+
+    margin: 25px 0;
+}
+.news a{
+    color: white;
+    text-decoration: none;
+    border:1px white solid;
+    padding: 8px 14px;
+    border-radius: 15px;
+}
+.slogan{
+    background-color: #485652;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+footer{
+    background-color: #000000;
+    color: rgb(155, 135, 92);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.shop{
+    display: flex;
+}
+.shop img{
+    width: 50%;
+}
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info h2{
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.info p{
+    text-align: center;
+    line-height: 2em;
+}
+.product{
+    display: flex;
+    background-color: #ede9db;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+.product div{
+    width: 100%;
+    text-align: center;
+}
+.product img{
+    width: 120%;
+    border-radius: 10px;
+}
+.product h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.product p{
+    font-size: 14px;
+    line-height: 1.6em;
+}
+.menu{
+    display: none;
+}
+ /*响应式设计语法*/
+ @media screen and (max-width: 768px) {
+    header ul{
+        display: none;
+    }
+    header h1{
+        left: 50%;
+         transform: translateX(-50%);
+    }
+    .news h2{
+        font-size: 40px;
+    }
+    .menu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+    .shop{
+        flex-direction: column;
+    }
+    .shop img{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+        padding: 40xp 0;
+    }
+    .info h2{
+        font-size: 20px;
+    }
+    .info p{
+        font-size: 12px;
+    }
+    .product{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .product div{
+        margin-bottom: 30px;
+    }
+
+
+ }
+
